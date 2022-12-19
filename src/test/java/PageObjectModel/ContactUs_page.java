@@ -5,9 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
-import javax.security.auth.x500.X500Principal;
 
 public class ContactUs_page extends AbstractClass{
     WebDriver driver;

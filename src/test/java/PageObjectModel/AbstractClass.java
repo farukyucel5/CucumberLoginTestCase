@@ -13,15 +13,14 @@ import java.time.Duration;
 public abstract class AbstractClass {
 
     private WebDriver driver = Driver.getDriver();
-    WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(10));
+
 
     public void clickFunction(WebElement clickElement){
-        wait.until(ExpectedConditions.elementToBeClickable(clickElement));
+
         clickElement.click();
     }
 
     public  void sendkeys(WebElement sendKeysElement,String keysvalue){
-        wait.until(ExpectedConditions.visibilityOf(sendKeysElement));
 
         sendKeysElement.sendKeys(keysvalue);
     }
