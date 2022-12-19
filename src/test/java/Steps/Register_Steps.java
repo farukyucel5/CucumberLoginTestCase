@@ -2,13 +2,10 @@ package Steps;
 
 import DriverPack.Driver;
 import PageObjectModel.register_Page;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
+
 
 import java.time.Duration;
 
