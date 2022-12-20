@@ -2,9 +2,12 @@ package Steps;
 
 import DriverPack.Driver;
 import PageObjectModel.register_Page;
+import io.cucumber.java.After;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 
 
 import java.time.Duration;
@@ -48,9 +51,11 @@ public class Register_Steps {
 
     }
 
-    @And("close all the windows")
-    public void closeAllTheWindows() {
-        Driver.getDriver();
+
+    @After
+    public void quitDriver(){
+
+        Driver.closeDriver();
     }
 
 
